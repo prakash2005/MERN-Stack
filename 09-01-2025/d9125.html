@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+            #tag1{
+                color: blue;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: ;
+            }
+            #tag:hover{
+                color: blue;
+                color-scheme: ;
+            }
+            #tag2{
+                transition: color 0.5s ease;
+                font-size: 0.3s ease;
+            }
+            .marque{
+                overflow: hidden;
+                white-space: nowrap;
+                box-sizing: border-box;
+                animation: marque 1s ;
+            }
+            @keyframes marque{
+                from{transform: translateX(100px);}
+                to{transform: translateX(-100px);}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="marque">
+        
+        <marquee><center><h1>Design using js</h1></center></marquee>
+        <p id="tag1"> Text one</p>
+        <p id="tag2"> Text two</p>
+        <script>
+            document.getElementById("tag2").style.color='pink';
+            document.getElementById("tag2").style.fontFamily='Ariel';
+            document.getElementById("tag2").style.fontSize='22px';
+
+        </script>
+        </div>
+    </body>
+</html>

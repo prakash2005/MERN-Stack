@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h2>Java Sript Form Validation</h2>
+        <p>Please Enter a number Between 1 to 10:
+            <input id="val">
+            <button type="button" onclick="myFun()">Click</button>
+            <p id="demo"></p>
+            <script>
+                function myFun(){
+                    let a=document.getElementById('val').value;
+                    let res;
+                    if(a<1 || a>10){
+                        res='Input incorrect';
+
+                    }
+                    else{
+                        res='Validation Successful';
+                    }
+                    document.getElementById('demo').innerHTML=res;
+                }
+            </script>
+        </p>
+    </body>
+</html>
