@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <title>Famous Indian Cricketers</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: linear-gradient(to top, rgb(5, 205, 15), rgba(255, 255, 255, 0.777), rgb(255, 162, 0));
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                text-align: center;
+                color: #f7eaea;
+                margin-top: 20px;
+                font-size: 36px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            .container {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+                gap: 20px;
+            }
+
+            .house {
+                flex: 1;
+                padding: 10px;
+                border: 3px solid #1E3A5F;
+                border-radius: 10px;
+                background-color: #7683929d;
+                position: relative;
+            }
+
+            h2 {
+                text-align: center;
+                color: #162A46;
+                font-size: 28px;
+                margin-bottom: 15px;
+                text-decoration: underline;
+                text-transform: uppercase;
+            }
+
+            .players {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 15px;
+                justify-items: center;
+            }
+
+            .img-container {
+                position: relative;
+                width: 100%;
+                height: 200px;
+                overflow: hidden;
+                border-radius: 8px;
+            }
+
+            .img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 8px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                border: 2px solid #2361a7;
+            }
+
+            .img:hover {
+                transform: scale(1.1);
+                box-shadow: 3px 8px 15px rgba(172, 182, 192, 0.2);
+                border-color: #b19e9e;
+            }
+
+            .name {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            .house:hover {
+                background-color: #143c1439; 
+            }
+
+            .img-container:hover .name {
+                opacity: 1;
+            }
+
+            footer {
+                text-align: center;
+                padding: 10px;
+                background: #18c629;
+                color: white;
+                font-weight: bold;
+            }
+
+            @media (max-width: 600px) {
+                .container {
+                    flex-direction: column;
+                }
+                .players {
+                    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Famous Indian Cricketers</h1>
+        <div class="container">
+            <div class="house">
+                <h2>Indian Batsmen</h2>
+                <div class="players">
+                    <div class="img-container"><img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOr3cDHrDjizSMpE4E4zRDzGsV6F7EmO867A&s" alt="Sachin Tendulkar"><div class="name">Sachin Tendulkar</div></div>
+                    <div class="img-container"><img class="img" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Virat_Kohli_during_the_India_vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg" alt="Virat Kohli"><div class="name">Virat Kohli</div></div>
+                    <div class="img-container"><img class="img" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Prime_Minister_Of_Bharat_Shri_Narendra_Damodardas_Modi_with_Shri_Rohit_Gurunath_Sharma_%28Cropped%29.jpg" alt="Rohit Sharma"><div class="name">Rohit Sharma</div></div>
+                    <div class="img-container"><img class="img" src="https://c.ndtvimg.com/2021-10/nn6emufo_ms-dhoni-ipl_650x400_07_October_21.jpg?im=FeatureCrop,algorithm=dnn,width=806,height=605" alt="MS Dhoni"><div class="name">MS Dhoni</div></div>
+                    <div class="img-container"><img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Sourav_Ganguly_closeup.jpg/330px-Sourav_Ganguly_closeup.jpg" alt="Sourav Ganguly"><div class="name">Sourav Ganguly</div></div>
+                    <div class="img-container"><img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Yuvraj_Singh_appointed_as_Ulysse_Nardin_watch_brand_ambassador.jpeg/330px-Yuvraj_Singh_appointed_as_Ulysse_Nardin_watch_brand_ambassador.jpeg" alt="Yuvraj Singh"><div class="name">Yuvraj Singh</div></div>
+                    <div class="img-container"><img class="img" src="https://i.pinimg.com/originals/5b/56/98/5b5698dc8bc27a93345030c8949876b8.jpg" alt="Virender Sehwag"><div class="name">Virender Sehwag</div></div>
+                    <div class="img-container"><img class="img" src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/319900/319935.1.png" alt="Gautam Gambhir"><div class="name">Gautam Gambhir</div></div>
+                    <div class="img-container"><img class="img" src="https://www.hindustantimes.com/static-content/1y/cricket-logos/players/shikhar-dhawan.png" alt="Shikhar Dhawan"><div class="name">Shikhar Dhawan</div></div>
+                </div>
+            </div>
+
+            <div class="house">
+                <h2>Indian Bowlers</h2>
+                <div class="players">
+                   
+                    <div class="img-container"><img class="img" src="https://api.bdcrictime.com/kapil-dev-03_03_2022.jpg" alt="Kapil Dev"><div class="name">Kapil Dev</div></div>
+                    <div class="img-container"><img class="img" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Zaheer_Khan.jpg" alt="Zaheer Khan"><div class="name">Zaheer Khan</div></div>
+                    <div class="img-container"><img class="img" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/PM_Shri_Narendra_Modi_with_Ravindra_Jadeja_%28Cropped%29.jpg" alt="Ravindra Jadeja"><div class="name">Ravindra Jadeja</div></div>
+                    <div class="img-container"><img class="img" src="https://www.india.com/wp-content/uploads/2015/01/ishant-sharma1.jpg" alt="Ishant Sharma"><div class="name">Ishant Sharma</div></div>
+                    <div class="img-container"><img class="img" src="https://p.imgci.com/db/PICTURES/CMS/260100/260127.jpg" alt="Javagal Srinath"><div class="name">Javagal Srinath</div></div>
+                    <div class="img-container"><img class="img" src="https://upload.wikimedia.org/wikipedia/commons/2/27/Bhuvneshwar_kumar_With_Rashid_Zirak_%28Bhuvneshwar_Kumar_cropped%29.jpg" alt="Bhuvneshwar Kumar"><div class="name">Bhuvneshwar Kumar</div></div>
+                    <div class="img-container"><img class="img" src="https://crictoday.com/wp-content/uploads/2023/02/Untitled-design-60.jpg" alt="Ravichandran Ashwin"><div class="name">Ravichandran Ashwin</div></div>
+                    <div class="img-container"><img class="img" src="https://c.ndtvimg.com/2021-12/pm484o78_harbhajan-singh-afp_625x300_24_December_21.jpg?im=FeatureCrop,algorithm=dnn,width=806,height=605" alt="Harbhajan Singh"><div class="name">Harbhajan Singh</div></div>
+                    <div class="img-container"><img class="img" src="https://upload.wikimedia.org/wikipedia/commons/0/02/Jasprit_Bumrah_in_PMO_New_Delhi.jpg" alt="Jasprit Bumrah"><div class="name">Jasprit Bumrah</div></div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Cricket Legends. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
